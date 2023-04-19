@@ -1,0 +1,951 @@
+/* 보통 , 둥글*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Noto+Sans+KR&family=Poppins&family=Varela+Round&display=swap');
+/* font-family: 'Nanum Brush Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+/* font-family: 'Hi Melody', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, a:link, a:visited{
+  text-decoration: none; /* a태그에 밑줄을 없애줌 */
+  color: black;
+}
+ul{
+  list-style: none;
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+.do .container h1{
+  float: left;
+  margin-top: 25px;
+  margin-left: 550px;
+  font-size: 32px;
+  border-top:2px solid #222;
+  
+}
+/* 로그인 회원가입 */
+.logres-box{
+  max-width: 100px;
+  margin: 0 auto;
+}
+.login-bar{
+  padding-top: 10px;
+  padding-right: 10px;
+  text-align: right;
+  font-size:14px; 
+}
+/*                     헤더                             */
+header{
+  width: 1600px;
+  height: 80px;
+  margin: 0 auto;
+  z-index: 1;
+}   
+.logo{ /*         헤더 - 로고            */
+  width: 150px;
+  height: 70px;
+  padding-left: 10px; 
+  float: left;
+}
+.logo img{
+  width: 70px;
+  float: left;
+  cursor: pointer;
+}
+.logo h1{ /*.logo > a > h1 이렇게도 가능*/
+    float: right;
+    padding-right: 10px;
+    padding-top: 15px;
+    font-family:'Noto Sans KR'!important;
+    font-weight: 500;
+    font-size: 24px;
+    text-shadow: 0 -1px 0 #222;
+}
+.rightHeader{
+  float: right;
+  height: 64px;
+  padding: 7px;    
+  padding-top: 20px;
+}
+.input-search{
+  float: left;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 20px 0 0 20px;/* 왼위, 오른 위, 오른 아래, 왼 아래*/
+  width: 170px;
+  height: 40px;
+  padding: 0 0 1px 20px;
+  font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #555555;
+}
+.input-search:focus{
+  border-color: rgba(82,168,236,0.8);
+  outline: 0; /*외곽선을 의미함*/
+}
+
+.input-search-submit{
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  background-size:55%;
+  background-position: center;
+  background-color: #fff;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0; /* 윈왼, 오른오, 오른아래, 오른 왼*/
+  border:1px solid #ccc;
+  border-left:1px solid #fff;
+  margin-left: -1px;
+}
+.rightHeader button{
+  float: left;
+}
+.rightHeader button:active{
+  color:red;
+}
+
+
+nav{
+  width:1200px;
+  height: 90px;
+  padding-left: 100px;
+  padding-top: 15px;
+  margin: 0 auto;
+  float: left;
+  font-weight: 550;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/* 삼단버튼 */
+/* 메뉴바 펼치기! 찾아 배운거! */
+nav .nav-fir{
+  padding-left: 100px;
+  float: left;
+}
+#menuicon {
+  display:none;
+}
+#menuicon + label {
+  position:relative;
+  display:block;
+  margin-top: 30px;
+  margin-left: 10px;
+  width:25px;
+  height:25px;
+  cursor:pointer;
+}
+#menuicon + label span {
+  display:block;
+  position:absolute;
+  width:100%;
+  height:1.6px;
+  border-radius:30px;
+  background:#000;
+  transition:all .35s;
+}
+#menuicon + label span:nth-child(1) {
+  top:0%;
+}
+#menuicon + label span:nth-child(2) {
+  top:50%;
+  transform:translateY(-50%);
+}
+#menuicon + label span:nth-child(3) {
+  bottom:0%;
+}
+
+#menuicon:checked + label {
+  z-index:2;
+}
+
+#menuicon:checked + label span:nth-child(1) {
+  top:50%;
+  transform:translateY(-50%) rotate(45deg);
+}
+#menuicon:checked + label span:nth-child(2) {
+  opacity:0;
+}
+#menuicon:checked + label span:nth-child(3) {
+  bottom:50%;transform:translateY(50%) rotate(-45deg);
+}
+
+.sidebar {
+  margin-top: 20px;
+  width:100%;
+  height:0px;
+  background-color: rgba(20, 74, 31, 0.61);
+  position:absolute;
+  left:0;
+  z-index:12;
+  transition:all 0.4s;
+  overflow:hidden;
+  box-shadow: 0px 2px 5px gray;
+}
+.sidebar::before{
+  background-image: url(../images/side-con.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  z-index:-1;
+  top: 0;
+  left: 0;
+  right: 0px;
+  bottom: 0px;
+}
+#menuicon:checked + label + .sidebar {
+  height: 300px;
+}
+
+
+.sidebar-ul {
+  width:100%;
+  text-align:center;
+  margin: 0 auto;
+}
+
+.sidebar-ul > li {
+  width: 14%;
+  margin-top:16px;
+  border-right:1px solid #ccc;
+  float: left;
+}
+.sidebar-ul > li:first-child {
+  margin-left:23%;
+}
+.sidebar-ul > li > a {
+  color: white;
+  border-bottom:1px solid #ccc;
+  font-size:20px;
+  font-weight: 500;
+}
+.sidebar-li > li{
+  margin-top:10px;
+}
+.sidebar-li > li:last-child{
+  margin-bottom: 15px;
+}
+.sidebar-li > li > a{
+  color: white;
+  font-size:16px;
+  font-weight: 400;
+}
+.sidebar-li .desc{
+  margin-top:1px;
+}
+.sidebar-li .desc > a{
+  color: white;
+  font-size:14px;
+  font-weight: normal;
+}
+
+/* nav left */
+.nav-left{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.nav-menu > li{
+  width: 200px;
+  float: left;
+  position: relative;
+  
+}
+.nav-menu > li:first-child{
+  margin-left: 20px
+}
+.nav-menu > li > a {
+  display: block;
+  color: black;
+  padding-bottom: 20px;
+}
+.nav-menu > li > a:hover{
+  text-shadow: 0 -1px #ccc;
+}
+.nav-menu > li > ul {
+  /* display: none; 안되는 이유 : display로 애니메이션 넣기 번거로움 */
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(112, 216, 133, 0.779) 0%, rgb(255, 255, 255) 5%);
+  left: 0;
+  margin-top: 2px;
+  height: 0;
+  transition: all 0.4s;
+}
+
+.nav-menu > li > ul > li {
+  /*위 아래 오른쪽 왼쪽*/
+  padding: 15px 15px 3px 3px;
+  text-align: center;
+}
+.nav-menu > li > ul > li > a{
+  font-size: 15px;
+  visibility: hidden;
+  transition: all 0.4s;
+  opacity: 0;
+  padding: 10px;
+  font-weight: 600;
+  z-index:1;
+}
+.nav-menu > li:hover{
+  background-color: #effff8;
+  transition: all 0.3s;
+}
+.nav-menu > li:hover > ul{
+  visibility: visible;
+  opacity:0.9;
+  height: 130px;
+  padding-left: 10px;
+  box-shadow: 0px 2px 5px black;
+  z-index: 10;
+}  
+.nav-menu > li:hover > ul > li > a{
+  visibility: visible;
+  opacity: 0.9;
+  color: #000;
+}  
+/* 네비 END --------------------------------------------------------------*/
+.section{
+    min-width: 1400px;
+    border-top: 4px solid rgb(130, 223, 76);
+    clear: both;
+}
+.section .slidewrap{
+  max-width: 1400px;
+  height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+/* 이미지 슬라이드쇼 END --------------------------------------
+/*                     헤더                             */
+/* contents -------------------------------------------------------------------------------------------*/
+.contents{ /*          컨텐츠            */
+  min-width: 1250px;
+  max-width: 1250px;
+  height: 310px;
+  margin: 0 auto;
+  
+}
+.tabMenu{ /*          컨텐츠 - 탭메뉴            */
+  /*부모가 컨텐츠*/
+  margin-left: 0px;
+  text-align: center;
+  width: 50%;
+  height: 310px;
+  margin-top: 20px;
+  float: left;
+}
+.tabMenu label{
+  margin-bottom: 15px;
+  display: inline-block;
+  font-weight: 600;
+  border: 2px solid transparent;
+}
+.tabContent{
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+#notice ul li{
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 2.5;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabMenu span{
+  font-weight: 100;
+  font-size: 13px;
+  padding-right: 15px;
+}
+/*---------------------이달의 식물-------------------------*/
+.section-about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  margin: 0 auto;
+}
+.btn-about {
+  margin: 55px 0 0 50px;
+}
+.btn-about button {
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+  border-radius: 100%;
+  background-color: #43a048cb;
+  border: none;
+  color: #f1f1f1;
+  font-size: 20px;
+}
+.btn-about button:hover {
+  cursor: pointer;
+  background-color: #43a0488e;
+  color: #000000;
+  /* border: 2px solid #6a75ca; */
+  transition: 0.5s ease-out;
+}
+.btn-about button img {
+  width: 50px;
+}
+    .modal-background {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.2);
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    .modal {
+      position: absolute;
+      top: 19%;
+      width: 440px;
+      background-color: #bbdcbd;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+    .modal h3 {
+      margin: 30px 0 7px 0;
+      font-size: 25px;
+      color: #678168;
+      font-family: "GmarketBold";
+    }
+    .modal h4 {
+      font-size: 20px;
+    }
+    .modal img {
+      width: 350px;
+      margin: 30px auto;
+      border-radius: 15px;
+    }
+    .modal p {
+      margin: 0 auto;
+      width: 360px;
+      font-weight: 1000;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .btn-close {
+      padding: 8px 140px;
+      margin: 25px 0 35px 0;
+      background-color: #678168;
+      border-radius: 10px;
+      border: none;
+      color: white;
+    }
+    .btn-close:hover {
+      background-color: white;
+      color: #4e664e9d;
+      transition: 0.3s ease-out;
+      cursor: pointer;
+    }
+    
+    /* .btn-moveTop {
+      position: fixed;
+      right: 60px;
+      bottom: 60px;
+      width: 65px;
+      height: 65px;
+      background-image: url(../images/btn-moveTop.png);
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-moveTop:hover {
+      background-image: url(../images/btn-moveTop-hover.png);
+      transition: 0.5s ease-out;
+    } */
+
+
+/*     푸터 시작     */
+footer{   
+    width:1400px;
+    text-align: center; 
+    height:65px;
+    margin: 0 auto;
+    clear: both;
+}
+#footer-div{
+    width:100%;
+    height:20px;
+}
+#footer-div ul {
+  text-align: center;
+    margin-top:15px;  
+    margin-left:10px;
+}
+
+#footer-div ul li{
+    display: inline-block;
+    padding:5px 10px;
+    border-right:1px solid #ddd; 
+  
+}
+#footer-div ul li:last-child{
+  border:none;  /* 마지막 항목에는 오른쪽 테두리 없음 */  
+}
+#footer-div ul li a, #footer-div ul li a:visited {  
+    font-size:15px; 
+    color:#666;
+}
+#company{
+  clear:left;  /* 플로팅 해제. clear:both도 가능 */
+  margin-top:25px;  /* 위쪽 마진 */  /* 왼쪽 마진 */ 
+}
+#company p{
+  font-size:14px;  /* 글자 크기 */
+  color:#aaa; 
+}
+
+@media screen and (max-width:1250px){
+  .container{
+      min-width: 1000px;
+      margin: 0 auto;
+  }
+  header{
+    max-width: 1200px;
+    min-width: 1000px; 
+  }    
+  .login-bar{
+      max-width: 1200px;
+  }
+  .logo{
+    padding-top: 15px;
+    max-width: 120px;
+  }
+  .logo img{
+    max-width: 60px;
+  }
+  .logo h1{
+    max-width: 70px;
+    padding-left: 0px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .section{
+    min-width: 1000px;
+}
+  .section img{
+    max-width: 100%;
+    height: 100%;
+  }
+ 
+  .section .slidewrap {
+      max-width:1200px;
+      height: 100%;
+  }
+  .section .slidelist .textbox h5 {
+      font-size:28px;
+  }
+  .section .slidelist .textbox p {
+      font-size:19px;
+  }
+
+  nav{
+      max-width: 840px;
+  }
+  nav > li{
+    font-size: 6px;
+  }
+  nav .nav-fir{
+    padding-left: 20px;
+  }
+  .sidebar-ul > li {
+      width: 13%;
+  }
+  .sidebar-ul > li:first-child {
+      margin-left:23%;
+  }
+  .nav-menu > li,.sidebar-ul > li{
+      width: 155px;
+  }
+  .nav-menu > li:first-child{
+      margin-left: 10px;
+  }
+  .nav-menu > li > ul > li > a{
+    font-size: 13px;
+  }
+  .contents {
+      min-width: 1000px;
+      max-width: 1200px;
+  }
+  .contents .tabMenu{
+    margin-top: 15px;
+    max-width: 100%;
+  }
+ #notice > ul > a > li{
+  font-size: 14px;
+ }
+ .btn-about {
+  margin: 50px 0 0 40px;
+}
+.btn-about button {
+  width: 175px;
+  height: 175px;
+  margin-left: 50px;
+  border-radius: 100%;
+  background-color: #43a048cb;
+  border: none;
+  color: #f1f1f1;
+  font-size: 16px;
+}
+.modal{
+  top: 18%;
+  max-width: 450px;
+  height: 580px;
+}
+.modal img{
+  max-width: 80%;
+  margin: 15px 0 15px 0;
+}
+.modal h3 {
+  margin: 20px 0 7px 0;
+  font-size: 18px;
+  color: #678168;
+  font-family: "GmarketBold";
+}
+.modal h4 {
+  font-size: 15px;
+}
+ footer{
+  max-width: 1200px;
+ }
+}
+/*----------------1000-----------------*/
+@media screen and (max-width:1000px){
+  .container{
+      max-width: 1000px;
+      min-width: 850px;
+      margin: 0 auto;
+  }
+  header{
+      max-width: 1000px;
+      min-width: 850px;
+  }   
+  .login-bar{
+    max-width: 980px;
+    min-width: 851px;
+    height: 20px;
+    font-size: 12px;
+}
+  .logo{
+    padding: 0px;
+    padding-top: 10px;
+    max-width: 100px;
+  }
+  .logo img{
+    max-width: 50px;
+  }
+  .logo h1{
+    max-width: 50px;
+    padding-left: 0px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  nav {
+      max-width: 650px;
+      min-width: 560px;
+  }
+  .nav-left{
+    padding: 0;
+    padding-top: 25px;
+  }
+  nav .nav-fir{
+    padding: 0;
+    padding-top: 10px;
+  }
+  #menuicon + label {
+    margin-top: 23px;
+  }
+  .sidebar-ul > li {
+      width: 16%;
+  }
+  .sidebar-ul > li:first-child {
+      margin-left:20%;
+  }
+  .sidebar-ul > li > a ,.sidebar-li > li > a{
+      font-size:14px;
+  }
+  .sidebar-li .desc > a{
+      font-size:12px;
+  }
+  .nav-menu > li{
+      margin-top: 12px;
+      width: 125px;
+  }
+  .nav-menu > li > a {
+      display: block;
+      color: black;
+      font-size: 14px;
+      padding-bottom: 15px;
+  }
+  .nav-menu > li:hover > ul {
+      width: 125px;
+  } 
+  .nav-menu > li > ul > li > a {
+      font-size: 13px;
+  }
+  
+  .section {
+      min-width: 851px;
+  }
+  .section .slidewrap {
+      max-width:999px;
+  }
+  .contents{
+      min-width: 851px;
+      max-width: 999px;
+  }
+  .contents .btn-open{
+    max-width: 150px;
+    margin-right: 10px;
+}
+.btn-about {
+  margin: 50px 0 0 30px;
+}
+.btn-about button {
+  width: 155px;
+  height: 155px;
+  margin-left: 30px;
+  border-radius: 100%;
+  background-color: #43a048cb;
+  border: none;
+  color: #f1f1f1;
+  font-size: 16px;
+}
+.modal{
+  top: 13%;
+  max-width: 400px;
+  height: 530px;
+}
+.modal img{
+  max-width: 75%;
+  margin: 10px 0 10px 0;
+}
+.modal h3 {
+  margin: 20px 0 7px 0;
+  font-size: 16px;
+  color: #678168;
+  font-family: "GmarketBold";
+}
+.modal h4 {
+  font-size: 14px;
+}
+.modal p {
+  font-size: 13px;
+}
+  footer{   
+      max-width:900px; 
+      min-width: 850px;
+  }
+  #footer-div ul li a {  
+    font-size:12px; 
+}
+#footer-div ul li{
+  padding: 1px 10px;
+}
+  #company{
+    margin-top:10px;
+  }
+  #company p{
+    font-size: 12px;
+  }
+}
+/*----------------850-----------------*/
+@media screen and (max-width:850px){
+  .container{
+      max-width: 849px;
+      min-width: 620px;
+  }
+  .login-bar{
+    width: 620px;
+    font-size:10px; 
+  }
+  .logo{
+    margin: 20px 0 0 0px;
+    padding: 0px;
+    width: 90px;
+  }
+  .logo img{
+    width: 50px;
+  }
+  .logo h1{
+    max-width: 30px;
+    padding: 0;
+    margin-right: 10px;
+    padding-top: 15px;
+    font-size: 15px;
+    text-align: center;
+  }
+  header{
+    max-width: 850px;
+    min-width: 650px;
+    height: 30px;
+  }       
+  .input-search{
+    width: 110px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .input-search-submit{
+    background-size:45%;
+    width: 50px;
+    height: 30px;
+  }
+
+  nav {
+      width: 560px;
+      padding: 0px;
+      padding-left: 25px;
+  }
+  nav .nav-fir{
+    width: 50px;
+    padding: 0;
+    padding-top: 20px;
+  }
+  .sidebar-ul > li {
+      width: 16%;
+  }
+  .sidebar-ul > li:first-child {
+      margin-left:16%;
+  }
+  .sidebar-ul > li > a ,.sidebar-li > li > a{
+      font-size:13px;
+  }
+  .sidebar-li .desc > a{
+      font-size:11px;
+  }
+
+  #menuicon + label {
+  padding: 0px;
+  }
+  .nav-menu{
+    padding-top: 20px;
+  }
+  .nav-left{
+    padding-top: 20px;
+    text-align: center;
+  }
+  .nav-menu > li{
+      margin-top: 15px;
+      width: 115px;
+  }
+  .nav-menu > li:first-child{
+      margin-left: 25px;
+  }
+  .nav-menu > li > a {
+      color: black;
+      font-size: 13px;
+      padding-bottom: 12px;
+  }
+  .nav-menu > li > ul > li {
+    /*위 아래 오른쪽 왼쪽*/
+    padding: 10px;
+    text-align: center;
+  }
+  .nav-menu > li:hover > ul {
+      width: 115px;
+      padding: 0;
+  } 
+  .nav-menu > li > ul > li > a {
+      font-size: 10px;
+  }
+  .nav-menu > li:hover > ul{
+    height: 100px;
+  }  
+
+  .section {
+      min-width: 650px;
+  }
+  .section .slidewrap {
+      max-width:750px;
+  }
+  .contents{
+      min-width: 650px;
+      max-width: 849px;
+  }
+  .btn-about {
+    padding: 0px;
+    margin: 90px 0 0 0px;
+  }
+  .btn-about button img {
+    width: 20px;
+  }
+  .btn-about button {
+    width: 125px;
+    height: 125px;
+    padding: 0px;
+    margin-left: 20px;
+    font-size: 12x;
+  }
+  .modal {
+    top: 11%;
+    width: 320px;
+    height: 480px;
+  }
+  .modal img{
+    max-width: 65%;
+    margin: 15px auto;
+  }
+  .modal h3 {
+    margin: 15px 0 5px 0;
+    font-size: 14px;
+  }
+  .modal h4 {
+    font-size: 12px;
+  }
+  .modal p {
+    margin: 0 auto;
+    width: 320px;
+    font-weight: 1000;
+    font-size: 11px;
+    line-height: 24px;
+  }
+  .btn-close {
+    padding: 8px 100px;
+    margin: 25px 0 35px 0;
+    background-color: #678168;
+    border-radius: 10px;
+    border: none;
+    color: white;
+  }
+  .tabContent{
+    min-width: 30px;
+    height: 230px;
+    margin: 15px 0 0 50px;
+  }
+  .tabMenu span{
+    font-size: 9px;
+  }
+  .tabMenu label{
+    margin: 0 0 0 35px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  footer{   
+    max-width: 650px;
+     min-width: 600px;
+  }
+  #footer-div ul {
+      margin: 15px 0 0 0;
+  }
+}

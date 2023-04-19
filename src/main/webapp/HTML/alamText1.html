@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/container.css" type="text/css" />
+    <link rel="stylesheet" href="css/side.css" type="text/css" />
+    <link rel="stylesheet" href="css/contentsText.css" type="text/css" />
+    <title>공지사항내용1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <style>*{font-family: 'Nanum Gothic', sans-serif;}</style>
+</head>
+<body>
+<div class="header">
+    <h1>HEADER</h1>
+</div>
+
+<div class="container">
+    <section class="box">
+      <aside class="box-sidebar">
+        <h2>게시판</h2>
+        <div class="side">
+            <ul class="side-menu">
+                <li class="on"><a href="alamBoard.html" >공지사항</a></li>
+                <li><a href="noteBoard.html" >자유게시판</a></li>
+            </ul>
+        </div>
+      </aside><!--사이드 메뉴 end-->
+
+        <div class="box-contents">
+            <div class="main-tit">
+                <h3>공지사항</h3>
+            </div>
+
+            <div class="box-title">
+                <h3 class="vTitle">
+                    <strong>공지사항내용</strong>
+                </h3>
+                <div class="vInfo">
+                    <div class="nickname">
+                        <ul>
+                            <li>
+                                <span>작성자</span>
+                                관리자
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <span>작성일</span>
+                                23-04-01
+                            </li>
+                            <li>
+                                <span>조회</span>
+                                20
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--상단 end-->
+
+                <div class="main-conts">
+                    <p>공지사항내용이 들어감</p>
+                </div>
+
+                <div class="list-btn">
+                    <button type="button" id="btn_list" class="btn_list" onclick="location.href='alamBoard.html'">목록</button>
+                </div>  
+            </div><!--메인내용 end-->
+
+            <div class="paging">
+                <span><a href="#" class="next" title="다음">다음</a></span>
+                <span><a href="#" class="last" title="마지막">이전</a></span>
+            </div><!--페이징 end-->
+        </div> 
+    </section>
+</div>
+
+<div class="footer">
+    <h1>FOOTER</h1>
+</div> 
+</body>
+</html>
