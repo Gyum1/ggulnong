@@ -1,0 +1,21 @@
+:root {
+    --div: 20px;
+}/*페딩, 마진 간격 설정*/
+
+.box-list{padding: var(--div)}
+
+/*메인 내용*/
+.list{width: 100%;border-spacing: 0px;border-bottom: 1px solid #FBB63E;}
+th{height: 35px;border-width:2px 0px 1px;border-style:solid;border-color:#FBB63E;vertical-align:middle;text-align:center;color:#222222}
+td{padding:5px;border-top:1px solid #eee;vertical-align:middle;text-align:center;color:#222222}
+tr:first-child td{border-top:none}
+tbody tr:hover{background:#f3f3f3}
+
+/*제목*/
+.list-tit{position:relative;text-align:left;min-width: 400px;max-width: 400px;}
+.list-tit a{color: #222222;}
+.list-tit a:hover{font-weight: 900;}
+
+/*글쓰기 버튼*/
+.write-btn{float: left;margin: 20px;height: 30px;}
+.write-btn button{width: 60px;height: 100%;background: #222222;outline: none;color: white;}

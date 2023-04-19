@@ -1,16 +1,18 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: itaegyeom
-  Date: 2023/04/11
-  Time: 8:12 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
+
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Kanari 웹 사이트</title>
+</head>
+<body>
+<%
+  session.invalidate();
+%>
+<script>
+  location.href = 'main1.jsp';
+</script>
+</body>
 </html>

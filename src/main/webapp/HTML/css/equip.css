@@ -1,0 +1,15 @@
+:root {
+    --div: 20px;
+}/*페딩, 마진 간격 설정*/
+
+/*메인 내용*/
+.box-kind{padding: var(--div)}
+.box-kind ul{list-style: none;}
+.idximg img{width: 150px;height: 150px}/*이미지크기*/
+.idximg{width: 150px;height: 150px}/*이미지크기*/
+.idx{border: 1px solid #8b8b8b;width: 100%;margin-bottom: 10px;display: flex;}
+.idx dt{font-size: 25px;font-weight: bold;width: 150px;height: 150px;flex-shrink: 0;}
+.idx dt h1{text-align: center;padding: 60px 0;font-size: 25px;}/*dt중앙정렬*/
+.idxtext{margin: 10px;}
+.idxtext em{font-style: normal;background-color: #f3f3f3;height: 20px;border-radius: 5px;padding: 5px;color: #222222;font-weight: 900;font-size: 13px;}
+.idxtext p{margin-top: 10px;}

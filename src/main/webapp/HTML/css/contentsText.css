@@ -1,0 +1,48 @@
+:root {
+    --div: 20px;
+}/*페딩, 마진 간격 설정*/
+
+.box-title{padding: var(--div)}
+
+/*메인 내용*/
+/*상단 바*/
+.box-title h3{padding: 10px 10px;font-size: 25px;}
+.vTitle{border-top:2px solid #FBB63E}
+.box-title ul{list-style: none;}
+.vInfo{padding: 0px 10px 5px 10px;border-bottom: 1px solid #eee;overflow: hidden;}
+.vInfo span{font-size: 13px;color: #3b3b3b}
+.nickname{float: left;}
+.info{float: right;}
+.info li{float: left;}
+.info li span{border-left: 1px solid #eee;padding-left: 10px;margin-left: 10px;}
+.info li:first-child span{border-left: none;}
+
+/*내용 박스*/
+.main-conts{padding: 25px 0;border-bottom: 2px solid #FBB63E;min-height: 100px;}
+
+/*댓글 박스*/
+.comment-li{padding-top: 10px;border-bottom: 1px solid #eee;padding-bottom: 10px;overflow: hidden;}
+.cmt-nickname{float: left;text-align: top;margin-right: 60px;font-size: 13px;}
+.cmt-txt{float: left;}
+.box-comment{/*margin-bottom: 50px*/margin-bottom: 15px}
+
+/*댓글 작성 박스*/
+.box-cmt-write{display: flex;border-width:2px 0px 2px;border-style:solid;border-color:#FBB63E;padding: 12px 0;}
+.user-nickname{width:50px;margin: 10px;font-size: 14px;}
+.cmt-txt-cont{margin: 5px;width: 100%;}
+.cmt-write-btn{height: 25px;margin-top: 5px;}
+.cmt-write textarea{width: 100%;height: 100px;border: 1px solid #3b3b3b;resize: none;}
+
+/*추천 버튼*/
+.box-select{text-align: right;margin-bottom: 40px}
+.box-select button{float: none;text-align: center;
+background-color: #fff;border: 1px solid #747474;border-radius: 15%;color: #222222;
+width: 50px; height: 30px;font-weight: bold;margin: 0 3px;}
+.box-select button:hover{background-color:#FBB63E;color:#fff;border-radius: 15%;}
+
+
+/*목록 버튼*/
+.list-btn{float: right;margin: 15px 0 0;height: 30px;}
+.list-btn button{width: 50px;height: 100%;background: #222222;outline: none;color: white;}
+
+.paging{float: left;width: 100%;text-align: center;}

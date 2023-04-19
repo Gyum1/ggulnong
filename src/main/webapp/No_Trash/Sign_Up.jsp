@@ -40,7 +40,7 @@
 
 <h2>회원가입</h2>
 
-<form action="joinAction.jsp" method="post" name="My_Form">
+<form action="../joinAction.jsp" method="post" name="My_Form">
     아이디:<input type="text" name="vUserId" placeholder="아이디를 입력하세요."><br>
     비밀번호:<input type="password" name="vPwd" placeholder="비밀번호를 입력하세요."><br/>
 
