@@ -1,0 +1,14 @@
+:root {
+    --div: 20px;
+}/*페딩, 마진 간격 설정*/
+
+/*개인정보처리방침 박스*/
+.box-privacy{padding: var(--div);}
+.privacy-wrap{border-width:2px 0px 2px;border-style:solid;border-color:#FBB63E;padding: 15px 0;text-align: center;}
+.privacy{width: 80%;display: inline-block;}
+.privacy-index{margin-bottom: 50px}
+.privacy-index h2{margin-bottom: 20px;}
+.privacy-ul{border: 1px solid #9b9b9b;padding: 30px 10px 20px 10px;}
+.privacy-main h2{margin-bottom: 20px;}
+.privacy-main-text{border: 1px solid #9b9b9b;padding: 30px 10px 20px 10px;}
+.privacy p{margin-bottom: 10px;text-align: left;}

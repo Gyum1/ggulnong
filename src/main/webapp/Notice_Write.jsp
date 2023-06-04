@@ -28,30 +28,17 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <ul class="navbar-nav navbar-white">
-    <li class="nav-item"><a class="nav-link" href="main1.jsp">메인</a></li>
-    <li class="nav-item active"><a class="nav-link" href="Notice.jsp">게시판</a></li>
+
     <%
       if(userID == null){
     %>
 
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Sign in </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="login_Practice.jsp">로그인</a>
-        <a class="dropdown-item" href="join.jsp">회원가입</a>
-      </div>
-    </li>
 
     <%
     }    else{
 
     %>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> 회원관리 </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="logoutAction.jsp">로그아웃</a>
-      </div>
-    </li>
+
     <%
       }
     %>

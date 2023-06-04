@@ -1,0 +1,1464 @@
+/* 보통 , 둥글*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Noto+Sans+KR&family=Poppins&family=Varela+Round&display=swap');
+/* font-family: 'Nanum Brush Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+/* font-family: 'Hi Melody', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, a:link, a:visited{
+  text-decoration: none; /* a태그에 밑줄을 없애줌 */
+  color: black;
+}
+ul{
+  list-style: none;
+}
+  
+.container{
+  width: 1920px;
+  margin: 0 auto;
+}
+.logres-box{
+  max-width: 1720px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.login-bar{
+  text-align: right;
+  font-size:17px; 
+}
+/*                     헤더                             */
+header{
+  width: 1820px;
+  height:80px;
+  margin: 0 auto;
+  z-index: 1;
+}   
+.logo{ /*         헤더 - 로고            */
+  width: 150px;
+  height: 60px;
+  float: left;
+}
+.logo img{
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+.logo h1{ /*.logo > a > h1 이렇게도 가능*/
+    float: right;
+    padding-right: 40px;
+    padding-top: 15px;
+    font-family:'Noto Sans KR'!important;
+    font-weight: 1600;
+    font-size: 24px;
+}
+.rightHeader{
+  float: right;
+  margin-right: 2.5%;
+  height: 64px;
+  padding: 7px;
+  margin-top: 10px;
+}
+.input-search{
+  float: left;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 20px 0 0 20px;/* 왼위, 오른 위, 오른 아래, 왼 아래*/
+  width: 200px;
+  height: 50px;
+  padding: 0 0 1px 20px;
+  font-size: 17px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #555555;
+}
+.input-search:focus{
+  border-color: rgba(82,168,236,0.8);
+  outline: 0; /*외곽선을 의미함*/
+}
+.input-search-submit{
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  background-size:55%;
+  background-position: center;
+  background-color: #fff;
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0; /* 윈왼, 오른오, 오른아래, 오른 왼*/
+  border:1px solid #ccc;
+  border-left:1px solid #fff;
+  margin-left: -1px;
+}
+.rightHeader button{
+  float: left;
+}
+.rightHeader button:active{
+  color:red;
+}
+
+
+nav{
+  width:1420px;
+  height: 80px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 550;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/* 삼단버튼 */
+/* 메뉴바 펼치기! 찾아 배운거! */
+nav .nav-fir{
+  margin-left: 200px;
+  float: left;
+}
+#menuicon {
+  display:none;
+}
+label{
+  margin-top: 35px;
+}
+#menuicon + label {
+  position:relative;
+  display:block;
+  width:25px;
+  height:25px;
+  cursor:pointer;
+}
+#menuicon + label span {
+  display:block;
+  position:absolute;
+  width:100%;
+  height:1.6px;
+  border-radius:30px;
+  background:#000;
+  transition:all .35s;
+}
+#menuicon + label span:nth-child(1) {
+  top:0%;
+}
+#menuicon + label span:nth-child(2) {
+  top:50%;
+  transform:translateY(-50%);
+}
+#menuicon + label span:nth-child(3) {
+  bottom:0%;
+}
+#menuicon:checked + label {
+  z-index:2;
+}
+#menuicon:checked + label span:nth-child(1) {
+  top:50%;
+  transform:translateY(-50%) rotate(45deg);
+}
+#menuicon:checked + label span:nth-child(2) {
+  opacity:0;
+}
+#menuicon:checked + label span:nth-child(3) {
+  bottom:50%;transform:translateY(50%) rotate(-45deg);
+}
+
+.sidebar {
+  margin-top: 25px;
+  width:100%;
+  height:0px;
+  background-color: rgba(20, 74, 31, 0.61);
+  position:absolute;
+  left:0;
+  z-index:12;
+  transition:all 0.4s;
+  overflow:hidden;
+  box-shadow: 0px 2px 5px gray;
+}
+.sidebar::before{
+  background-image: url(../images/side-con.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  z-index:-1;
+  top: 0;
+  left: 0;
+  right: 0px;
+  bottom: 0px;
+}
+#menuicon:checked + label + .sidebar {
+  height: 300px;
+}
+
+.sidebar-ul {
+  display: flex;
+  justify-content: center;  
+  padding-right: 300px;
+  width:100%;
+  text-align:center;
+  margin: 0 auto;
+}
+
+.sidebar-ul > li {
+  width: 15%;
+  margin-top:16px;
+  border-right:1px solid #ccc;
+  float: left;
+}
+.sidebar-ul > li:first-child {
+  margin-left:300px;
+}
+.sidebar-ul > li > a {
+  color: white;
+  border-bottom:1px solid #ccc;
+  font-size:20px;
+  font-weight: 500;
+}
+.sidebar-li > li{
+  margin-top:10px;
+}
+.sidebar-li > li:last-child{
+  margin-bottom: 15px;
+}
+.sidebar-li > li > a{
+  color: white;
+  font-size:18px;
+  font-weight: 400;
+}
+.sidebar-li .desc{
+  margin-top:1px;
+}
+.sidebar-li .desc > a{
+  color: white;
+  font-size:15px;
+  font-weight: normal;
+}
+
+/* nav left */
+.nav-left{
+  padding-top: 30px;
+  height: 64px;
+  text-align: center;
+}
+
+.nav-menu > li{
+  width: 200px;
+  float: left;
+  position: relative;
+  
+}
+.nav-menu > li:first-child{
+  margin-left: 50px
+}
+.nav-menu > li > a {
+  display: block;
+  color: black;
+  padding-bottom: 13%;
+}
+.nav-menu > li > a:hover{
+  text-shadow: 0 -1px #ccc;
+}
+.nav-menu > li > ul {
+  /* display: none; 안되는 이유 : display로 애니메이션 넣기 번거로움 */
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(112, 216, 133, 0.779) 0%, rgb(255, 255, 255) 5%);
+  left: 0;
+  margin-top: 2px;
+  height: 0;
+  transition: all 0.4s;
+}
+
+.nav-menu > li > ul > li {
+  /*위 아래 오른쪽 왼쪽*/
+  padding: 35px 15px 10px 3px;
+  text-align: center;
+}
+.nav-menu > li > ul > li > a{
+  font-size: 18px;
+  visibility: hidden;
+  transition: all 0.4s;
+  opacity: 0;
+  padding: 10px;
+  font-weight: 600;
+  z-index:1;
+}
+.nav-menu > li:hover{
+  background-color: #effff8;
+  transition: all 0.3s;
+}
+.nav-menu > li:hover > ul{
+  visibility: visible;
+  opacity:0.9;
+  height: 200px;
+  padding-left: 10px;
+  box-shadow: 0px 2px 5px black;
+  z-index: 10;
+}  
+.nav-menu > li:hover > ul > li > a{
+  visibility: visible;
+  opacity: 0.9;
+  color: #000;
+}  
+/* 네비 END --------------------------------------------------------------*/
+.section{
+    width: 1920px;
+    border-top: 4px solid rgb(130, 223, 76);
+    margin-top: 25px;
+    clear: both;
+}
+.section .slidewrap{
+  width: 1720px;
+  height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.section .slidewrap img{
+  width: 100%;
+  height: 400px;
+}
+
+
+/* 이미지 슬라이드쇼 END --------------------------------------
+/*                     헤더                             */
+/* contents -------------------------------------------------------------------------------------------*/
+.contents{ /*          컨텐츠            */
+  width: 1920px;
+  height: 400px;
+  margin: 0 auto;
+  
+}
+.tabMenu{ /*          컨텐츠 - 탭메뉴            */
+  /*부모가 컨텐츠*/
+  text-align: center;
+  width: 700px;
+  height: 400px;
+  margin-left: 250px;
+  float: left;
+}
+.tabMenu label{
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: inline-block;
+  font-weight: 600;
+  border: 2px solid transparent;
+}
+.tabContent{
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+#notice ul li{
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 2.5;
+  border-bottom: 1px solid #ddd;
+}
+.tabContent ul :hover{
+  background-color: rgb(215, 215, 215);
+}
+.tabMenu span{
+  font-weight: 100;
+  font-size: 16px;
+  padding-right: 15px;
+}
+/*---------------------이달의 식물-------------------------*/
+.section-about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.btn-about {
+  margin: 80px 0 0 20px;
+}
+.btn-about button {
+  width: 200px;
+  height: 200px;
+  margin-left: 100px;
+  border-radius: 100%;
+  background-color: #43a048cb;
+  border: none;
+  color: #f1f1f1;
+  font-size: 20px;
+}
+.btn-about button:hover {
+  cursor: pointer;
+  background-color: #43a0488e;
+  color: #000000;
+  /* border: 2px solid #6a75ca; */
+  transition: 0.5s ease-out;
+}
+.btn-about button img {
+  width: 50px;
+}
+    .modal-background {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    .modal {
+      position: absolute;
+      top: 15%;
+      width: 550px;
+      background-color: #bbdcbd;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+    .modal h3 {
+      margin: 30px 0 7px 0;
+      font-size: 25px;
+      color: #678168;
+      font-family: "GmarketBold";
+    }
+    .modal h4 {
+      font-size: 24px;
+    }
+    .modal img {
+      width: 350px;
+      margin: 30px auto;
+      border-radius: 15px;
+    }
+    .modal p {
+      margin: 0 auto;
+      width: 500px;
+      font-weight: 1000;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .btn-close {
+      padding: 8px 140px;
+      margin: 25px 0 35px 0;
+      height: 50px;
+      font-size: 20px;
+      background-color: #678168;
+      border-radius: 10px;
+      border: none;
+      color: white;
+    }
+    .btn-close:hover {
+      background-color: white;
+      color: #4e664e9d;
+      transition: 0.3s ease-out;
+      cursor: pointer;
+    }
+    
+    /* .btn-moveTop {
+      position: fixed;
+      right: 60px;
+      bottom: 60px;
+      width: 65px;
+      height: 65px;
+      background-image: url(../images/btn-moveTop.png);
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-moveTop:hover {
+      background-image: url(../images/btn-moveTop-hover.png);
+      transition: 0.5s ease-out;
+    } */
+
+
+/*     푸터 시작     */
+footer{   
+    width:1920px;
+    text-align: center; 
+    height:65px;
+    margin: 0 auto;
+    clear: both;
+}
+#footer-div{
+    width:100%;
+    height:20px;
+}
+#footer-div ul {
+  text-align: center;
+    margin-top:15px;  
+    margin-left:10px;
+}
+
+#footer-div ul li{
+    display: inline-block;
+    padding:5px 10px;
+    border-right:1px solid #ddd; 
+  
+}
+#footer-div ul li:last-child{
+  border:none;  /* 마지막 항목에는 오른쪽 테두리 없음 */  
+}
+#footer-div ul li a, #footer-div ul li a:visited {  
+    font-size:15px; 
+    color:#666;
+}
+#company{
+  clear:left;  /* 플로팅 해제. clear:both도 가능 */
+  margin-top:25px;  /* 위쪽 마진 */  /* 왼쪽 마진 */ 
+}
+#company p{
+  font-size:14px;  /* 글자 크기 */
+  color:#aaa; 
+}
+@media screen and (max-width:1536px){
+  .container{
+    max-width: 1536px;
+    min-width: 1281px;
+    margin: 0 auto;
+  }
+  .logres-box{
+    max-width: 1436px;
+    }
+  .login-bar{
+    font-size: 14px;
+  }
+  .input-search{
+    width: 170px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .input-search-submit{
+    width: 50px;
+    height: 40px;
+  }
+  header{
+    max-width: 1436px;
+    min-width: 1281px;
+  }
+  .logo{ /*         헤더 - 로고            */
+    width: 120px;
+    height: 50px;
+    margin-left: 20px;
+    padding-top: 10px;
+  }
+  .logo img{
+    width: 50px;
+    height: 50px;
+  }
+  .logo h1{ /*.logo > a > h1 이렇게도 가능*/
+      padding-right: 30px;
+      padding-top: 10px;
+      font-weight: 1200;
+      font-size: 20px;
+  }
+  .rightHeader{
+    margin-right: 0px;
+  }
+  nav{
+    max-width: 1200px;
+    font-size: 17px;
+  }
+  nav .nav-fir{
+    margin-left: 120px;
+  }
+  label{
+    margin-top: 30px;
+  }
+  .sidebar {
+    margin-top: 21px;
+  }
+  #menuicon:checked + label + .sidebar {
+    height: 250px;
+  }
+  .sidebar-ul {
+    padding-right: 280px;
+  }
+  .sidebar-ul > li {
+    margin-left: 50px;
+    padding-right: 50px;
+    border-right:1px solid #ccc;
+  }
+  .sidebar-ul > li > a {
+    font-size:16px;
+  }
+  .sidebar-li > li > a{
+    font-size:14px;
+    font-weight: 400;
+  }
+  .sidebar-li .desc > a{
+    font-size:12px;
+  }
+  .nav-menu > li{
+    width: 150px;
+    margin-left: 50px;
+  }
+ 
+  .nav-menu > li > a {
+      height: 45px;
+  }
+ 
+  .nav-menu > li > ul > li {
+    padding: 15px 15px 3px 3px;
+    text-align: center;
+  }
+  .nav-menu > li > ul > li > a{
+    font-size: 15px;
+  }
+  .nav-menu > li:hover > ul{
+    height: 130px;
+  }  
+  
+  .section{
+    max-width: 1536px;
+    min-width: 1281px;
+    margin: 0 auto;
+}
+.section .slidewrap{
+  max-width: 1336px;
+}
+.contents{ /*          컨텐츠            */
+  min-width: 1536px;
+  max-width: 1281px;
+  height: 350px;
+  margin: 0 auto;
+}
+.tabMenu{ /*          컨텐츠 - 탭메뉴            */
+  /*부모가 컨텐츠*/
+  margin: 0 auto;
+  padding: 0;
+  width: 45%;
+  margin-left: 100px;
+  height: 310px;
+}
+.tabMenu label{
+  font-size: 18px;
+  margin-top: 10px;
+}
+.modal p {
+  font-size: 14px;
+  width: 360px;
+}
+.btn-close {
+  padding: 8px 140px;
+  margin: 25px 0 35px 0;
+  height: 40px;
+  font-size: 16px;
+}
+footer{
+  max-width: 1536px;
+}
+}
+@media screen and (max-width:1280px){
+  .container{
+    max-width: 1280px;
+    min-width: 1025px;
+    margin: 0 auto;
+  }
+  .logres-box{
+    max-width: 1180px;
+    }
+  .login-bar{
+    font-size: 14px;
+  }
+  .rightHeader{
+    padding-right: 2.5%;
+  }
+  .input-search{
+    width: 170px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .input-search-submit{
+    width: 50px;
+    height: 40px;
+  }
+  header{
+    max-width: 1280px;
+    min-width: 1025px;
+  }
+  .logo{ /*         헤더 - 로고            */
+    width: 120px;
+    height: 50px;
+    margin-left: 30px;
+    padding-top: 10px;
+  }
+  .logo img{
+    width: 50px;
+    height: 50px;
+  }
+  .logo h1{ /*.logo > a > h1 이렇게도 가능*/
+      padding-right: 30px;
+      padding-top: 10px;
+      font-weight: 800;
+      font-size: 20px;
+  }
+  nav{
+    max-width: 880px;
+    font-size: 17px;
+  }
+  nav .nav-fir{
+    margin-left: 50px;
+  }
+  label{
+    margin-top: 30px;
+  }
+  .sidebar {
+    margin-top: 21px;
+  }
+  #menuicon:checked + label + .sidebar {
+    height: 250px;
+  }
+  .sidebar-ul {
+    padding-right: 180px;
+  }
+  .sidebar-ul > li {
+    margin-left: 30px;
+    padding-right: 30px;
+    border-right:1px solid #ccc;
+  }
+  .sidebar-ul > li > a {
+    font-size:15px;
+  }
+  .sidebar-li > li > a{
+    font-size:13px;
+    font-weight: 400;
+  }
+  .sidebar-li .desc > a{
+    font-size:11px;
+  }
+  .nav-menu > li{
+    width: 130px;
+    margin-left: 30px;
+  }
+ 
+  .nav-menu > li > a {
+      height: 45px;
+  }
+ 
+  .nav-menu > li > ul > li {
+    padding: 15px 15px 3px 3px;
+    text-align: center;
+  }
+  .nav-menu > li > ul > li > a{
+    font-size: 15px;
+  }
+  .nav-menu > li:hover > ul{
+    height: 130px;
+  }  
+  
+  .section{
+    max-width: 1280px;
+    min-width: 1025px;
+    height: 300px;
+    margin: 0 auto;
+}
+.section .slidewrap{
+  max-width: 1080px;
+  height: 300px;
+}
+.section .slidewrap img{
+width: 100%;
+height: 300px;
+}
+.contents{ /*          컨텐츠            */
+  max-width: 1280px;
+  min-width: 1025px;
+  height: 350px;
+  margin: 0 auto;
+}
+.tabMenu{ /*          컨텐츠 - 탭메뉴            */
+  /*부모가 컨텐츠*/
+  margin: 0 auto;
+  padding: 0;
+  width: 40%;
+  margin-left: 130px;
+  height: 300px;
+}
+.tabMenu label{
+  font-size: 18px;
+  margin-top: 10px;
+}
+#notice ul li{
+  font-size: 16px;
+}
+.modal {
+  position: absolute;
+  top: 12%;
+  width: 550px;
+  background-color: #bbdcbd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.modal p {
+  font-size: 14px;
+  width: 360px;
+}
+.btn-about {
+  margin: 80px 0 0 10px;
+}
+.btn-about button {
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+  font-size: 20px;
+}
+.btn-close {
+  padding: 8px 140px;
+  margin: 25px 0 35px 0;
+  height: 40px;
+  font-size: 16px;
+}
+footer{
+  max-width: 1280px;
+}
+}
+@media screen and (max-width:1024px){
+    .container{
+      max-width: 1024px;
+      min-width: 769px;
+      margin: 0 auto;
+    }
+    .logres-box{
+      max-width: 924px;
+      }
+    .login-bar{
+      font-size: 12px;
+    }
+    .rightHeader{
+      margin: 0 auto;
+      margin-top: 5px;
+      padding-right: 3.5%;
+      height: 40px;
+    }
+    .input-search{
+      width: 130px;
+      height: 30px;
+      font-size: 12px;
+    }
+    .input-search-submit{
+      width: 35px;
+      height: 30px;
+    }
+    header{
+      max-width: 1024px;
+      min-width: 769px;
+      height: 70px;
+    }
+    .logo{ /*         헤더 - 로고            */
+      width: 90px;
+      height: 30px;
+      margin-left: 30px;
+      padding-top: 0px;
+    }
+    .logo img{
+      width: 40px;
+      height: 40px;
+    }
+    .logo h1{ /*.logo > a > h1 이렇게도 가능*/
+        padding-right: 20px;
+        padding-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    nav{
+      max-width: 780px;
+      height: 55px;
+      font-size: 14px;
+    }
+    nav .nav-fir{
+      margin-left: 40px;
+    }
+    nav .nav-left{
+      padding-top: 20px;
+      height: 55px;
+    }
+    label{
+      margin-top: 20px;
+    }
+    #menuicon + label {
+      width:20px;
+      height:20px;
+    }
+    .sidebar {
+      margin-top: 15px;
+    }
+    #menuicon:checked + label + .sidebar {
+      height: 200px;
+    }
+    .sidebar-ul {
+      padding-right: 200px;
+    }
+    .sidebar-ul > li:first-child {
+      margin-left:180px;
+    }
+    .sidebar-ul > li {
+      width: 18%;
+      margin-left: 0px;
+      padding-right: 0px;
+    }
+    .sidebar-ul > li > a {
+      font-size:13px;
+    }
+    .sidebar-li > li > a{
+      font-size:11px;
+      font-weight: 400;
+    }
+    .sidebar-li .desc > a{
+      font-size:9px;
+    }
+
+    .nav-menu > li{
+      width: 110px;
+      margin-left: 30px;
+    }
+    .nav-menu > li > a {
+        height: 35px;
+    }
+    .nav-menu > li > ul > li {
+      padding: 10px 5px 0px 0px;
+    }
+    .nav-menu > li > ul > li > a{
+      font-size: 8px;
+    }
+    .nav-menu > li:hover > ul{
+      height: 80px;
+    }  
+    
+    .section{
+      max-width: 1024px;
+      min-width: 769px;
+      height: 250px;
+      margin: 0 auto;
+  }
+  .section .slidewrap{
+    max-width: 824px;
+    height: 250px;
+  }
+  .section .slidewrap img{
+    width: 100%;
+    height: 250px;
+    }
+  .contents{ /*          컨텐츠            */
+    max-width: 1024px;
+    min-width: 769px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .tabMenu{ /*          컨텐츠 - 탭메뉴            */
+    /*부모가 컨텐츠*/
+    margin: 0 auto;
+    padding: 0;
+    width: 40%;
+    margin-left: 80px;
+    height: 300px;
+
+  }
+  .tabMenu label{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  #notice ul li{
+    padding-top:6px;
+    font-size: 14px;
+    line-height: 2.5;
+  }
+
+
+
+
+  .modal {
+    position: absolute;
+    top: 7%;
+    width: 400px;
+  }
+  .modal h3 {
+    margin: 20px 0 3px 0;
+    font-size: 20px;
+  }
+  .modal h4 {
+    font-size: 21px;
+  }
+  .modal img {
+    width: 300px;
+    margin: 20px auto;
+  }
+  .modal p {
+    font-size: 14px;
+    width: 360px;
+  }
+  .btn-about {
+    margin: 50px 0 0 5px;
+  }
+  .btn-about button img {
+    width: 40px;
+  }
+  .btn-about button {
+    width: 160px;
+    height: 160px;
+    margin-left: 40px;
+    font-size: 18px;
+  }
+  .btn-close {
+    padding: 8px 140px;
+    margin: 25px 0 35px 0;
+    height: 40px;
+    font-size: 16px;
+  }
+  footer{
+    max-width: 1024px;
+  }
+  #footer-div ul li a, #footer-div ul li a:visited {  
+    font-size:13px; 
+    color:#666;
+}
+#company{
+  margin-top:15px;  /* 위쪽 마진 */  /* 왼쪽 마진 */ 
+}
+#company p{
+  font-size:12px;  /* 글자 크기 */
+  color:#aaa; 
+}
+}
+@media screen and (max-width:768px){
+  .container{
+    max-width: 768px;
+    min-width: 426px;
+    margin: 0 auto;
+  }
+  .logres-box{
+    max-width: 698px;
+    }
+  .login-bar{
+    font-size: 10px;
+  }
+  .rightHeader{
+    margin: 0 auto;
+    margin-top: 5px;
+    padding-right: 3.5%;
+    height: 40px;
+  }
+  .input-search{
+    width: 110px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .input-search-submit{
+    width: 30px;
+    height: 25px;
+  }
+  header{
+    max-width: 768px;
+    min-width: 426px;
+    height: 70px;
+  }
+  .logo{ /*         헤더 - 로고            */
+    width: 70px;
+    height: 35px;
+    margin-left: 20px;
+    padding-top: 0px;
+  }
+  .logo img{
+    width: 35px;
+    height: 35px;
+  }
+  .logo h1{ /*.logo > a > h1 이렇게도 가능*/
+      padding-right: 5px;
+      padding-top: 10px;
+      font-weight: 300;
+      font-size: 14px;
+  }
+  nav{
+    max-width: 668px;
+    height: 40px;
+    font-size: 12px;
+  }
+  nav .nav-fir{
+    margin-left: 30px;
+  }
+  nav .nav-left{
+    padding-top: 8px;
+    height: 55px;
+  }
+  label{
+    margin-top: 20px;
+  }
+  #menuicon + label {
+    width:18px;
+    height:18px;
+  }
+  .sidebar {
+    margin-top: 20px;
+  }
+  #menuicon:checked + label + .sidebar {
+    height: 200px;
+  }
+  .sidebar-ul {
+    padding-right: 200px;
+  }
+  .sidebar-ul > li:first-child {
+    margin-left:180px;
+  }
+  .sidebar-ul > li {
+    width: 18%;
+    margin-left: 0px;
+    padding-right: 0px;
+  }
+  .sidebar-ul > li > a {
+    font-size:13px;
+  }
+  .sidebar-li > li > a{
+    font-size:11px;
+    font-weight: 400;
+  }
+  .sidebar-li .desc > a{
+    font-size:9px;
+  }
+  .nav-menu > li:first-child{
+    margin-left: 30px
+  }
+  .nav-menu > li{
+    margin-top: 10px;
+    width: 90px;
+    margin-left: 20px;
+  }
+  .nav-menu > li > a {
+      height: 35px;
+  }
+  .nav-menu > li > ul > li {
+    padding: 10px 2px 2px 0px;
+  }
+  .nav-menu > li > ul > li > a{
+    padding: 0;
+    font-size: 3px;
+  }
+  .nav-menu > li:hover > ul{
+    height: 70px;
+  }  
+  
+  .section{
+    max-width: 768px;
+    min-width: 426px;
+    height: 200px;
+    margin: 0 auto;
+}
+.section .slidewrap{
+  max-width: 684px;
+  height: 250px;
+}
+.section .slidewrap img{
+  width: 100%;
+  height: 200px;
+  }
+.contents{ /*          컨텐츠            */
+  max-width: 768px;
+  min-width: 426px;
+  height: 250px;
+  margin: 0 auto;
+}
+.tabMenu{ /*          컨텐츠 - 탭메뉴            */
+  /*부모가 컨텐츠*/
+  margin: 0 auto;
+  padding: 0;
+  width: 40%;
+  margin-left: 60px;
+  height: 250px;
+
+}
+.tabMenu label{
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#notice ul li{
+  padding-top:4px;
+  font-size: 12px;
+  line-height: 2.5;
+}
+
+
+
+
+.modal {
+  position: absolute;
+  top: 6%;
+  width: 350px;
+}
+.modal h3 {
+  margin: 15px 0 0 0;
+  font-size: 17px;
+}
+.modal h4 {
+  font-size: 18px;
+}
+.modal img {
+  width: 250px;
+  margin: 15px auto;
+}
+.modal p {
+  font-size: 13px;
+  width: 340px;
+}
+.btn-about {
+  margin: 30px 0 0 5px;
+}
+.btn-about button img {
+  width: 30px;
+}
+.btn-about button {
+  width: 135px;
+  height: 135px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+.btn-close {
+  padding: 6px 120px;
+  margin: 20px 0 25px 0;
+  height: 40px;
+  font-size: 14px;
+}
+footer{
+  max-width: 768px;
+}
+#footer-div ul li a, #footer-div ul li a:visited {  
+  font-size:12px; 
+}
+#company{
+margin-top:15px;  /* 위쪽 마진 */  /* 왼쪽 마진 */ 
+}
+#company p{
+font-size:12px;  /* 글자 크기 */
+color:#aaa; 
+}
+}
+@media screen and (max-width:425px){
+  .container{
+    max-width: 425px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+  .logres-box{
+    max-width: 395px;
+    }
+  .login-bar{
+    font-size: 11px;
+  }
+  .rightHeader{
+    margin: 0 auto;
+    margin-top: 5px;
+    padding-right: 3%;
+    height: 40px;
+  }
+  .input-search{
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .input-search-submit{
+    width: 35px;
+    height: 30px;
+  }
+  header{
+    max-width: 425px;
+    min-width: 300px;
+    height: 40px;
+  }
+  .logo{ /*         헤더 - 로고            */
+    width: 60px;
+    height: 25px;
+    margin-left: 10px;
+    padding-top: 0px;
+  }
+  .logo img{
+    width: 30px;
+    height: 30px;
+  }
+  .logo h1{ /*.logo > a > h1 이렇게도 가능*/
+      padding-right: 5px;
+      padding-top: 10px;
+      font-weight: 500;
+      font-size: 12px;
+  }
+  nav{
+    max-width: 425px;
+    height: 40px;
+    font-size: 12px;
+    float: left;
+    display: flex;
+  }
+  .nav-fir{
+    margin-left: 0px;
+  }
+  nav .nav-left{
+    padding:0px;
+    padding-top: 8px;
+    
+    height: 55px;
+  }
+  label{
+    margin-top: 10px;
+  }
+  #menuicon + label {
+    width:15px;
+    height:15px;
+  }
+  .sidebar {
+    margin-top: 15px;
+    width: 428px;
+  }
+  #menuicon:checked + label + .sidebar {
+    height: 150px;
+  }
+  .sidebar-ul {
+    padding-right: 0px;
+  }
+  .sidebar-ul > li:first-child {
+    margin-left:0px;
+  }
+  .sidebar-ul > li {
+    width: 25%;
+    margin-left: 0px;
+    padding-right: 0px;
+  }
+  .sidebar-ul > li > a {
+    font-size:11px;
+  }
+  .sidebar-li > li > a{
+    font-size:10px;
+    font-weight: 400;
+  }
+  .sidebar-li .desc > a{
+    font-size:8px;
+  }
+  .nav-menu > li:first-child{
+    margin-left: 20px
+  }
+  .nav-menu > li{
+    margin-top: 0px;
+    width: 85px;
+    margin-left: 0px;
+  }
+  .nav-menu > li > a {
+      height: 29px;
+  }
+  .nav-menu > li > ul > li {
+    padding: 10px 5px 0px 0px;
+    
+  }
+  .nav-menu > li > ul > li > a{
+    padding: 0;
+    font-size: 8px;
+
+  }
+  .nav-menu > li:hover > ul{
+    height: 80px;
+  }  
+  
+  .section{
+    max-width: 425px;
+    min-width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    border: 4px solid rgb(130, 223, 76);
+}
+.section .slidewrap{
+  max-width: 417px;
+  height: 200px;
+}
+.section img{
+  width: 425px;
+}
+.section .slidewrap img{
+  width: 100%;
+  height: 192px;
+  }
+.contents{ /*          컨텐츠            */
+  max-width: 425px;
+  min-width: 300px;
+  height: 450px;
+  margin: 0 auto;
+}
+.tabMenu{ /*          컨텐츠 - 탭메뉴            */
+  /*부모가 컨텐츠*/
+  margin: 0 auto;
+  padding: 0;
+  width: 423px;
+  height: 250px;
+}
+.tabContent{
+  border-top: 2px solid rgb(19, 184, 19);
+  border-left: 2px solid rgb(19, 184, 19);
+  border-right: 2px solid rgb(19, 184, 19);
+}
+.tabMenu label{
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#notice ul li{
+  padding-top:4px;
+  font-size: 12px;
+  line-height: 2.5;
+  border-bottom: 1px solid rgb(19, 184, 19);
+}
+#notice ul:last-child{
+  border-bottom: 2px solid rgb(19, 184, 19);
+}
+
+.modal {
+  position: absolute;
+  top: 8%;
+  width: 350px;
+}
+.modal h3 {
+  margin: 15px 0 0 0;
+  font-size: 17px;
+}
+.modal h4 {
+  font-size: 18px;
+}
+.modal img {
+  width: 250px;
+  margin: 15px auto;
+}
+.modal p {
+  font-size: 13px;
+  width: 340px;
+}
+.section-about {
+  width: 425px;
+}
+.btn-about {
+  margin: 0px
+}
+.btn-about button img {
+  width: 30px;
+}
+.btn-about button {
+  width: 135px;
+  height: 135px;
+  margin-left: 50px;
+  font-size: 15px;
+}
+.btn-close {
+  padding: 6px 120px;
+  margin: 20px 0 25px 0;
+  height: 40px;
+  font-size: 14px;
+}
+footer{
+  display: none;
+  max-width: 425px;
+}
+#footer-div ul li a, #footer-div ul li a:visited {  
+  font-size:12px; 
+}
+#company{
+margin-top:15px;  /* 위쪽 마진 */  /* 왼쪽 마진 */ 
+}
+#company p{
+font-size:12px;  /* 글자 크기 */
+color:#aaa; 
+}
+}

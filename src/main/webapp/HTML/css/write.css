@@ -1,0 +1,17 @@
+:root {
+    --div: 20px;
+}/*페딩, 마진 간격 설정*/
+
+/*글쓰기 박스*/
+.box-writer{padding: var(--div);}
+.writer{border-width:2px 0px 2px;border-style:solid;border-color:#FBB63E;padding: 15px 0;text-align: center;}
+.writer-td{width: 80%;display: inline-block;}
+.writer h2{margin-bottom: 10px;text-align: left;}
+.write-subject{width: 100%;height: 30px;border: 1px solid #3b3b3b;margin-bottom: 10px;padding: 5px;outline: none;}
+.write-text{width: 100%;height: 500px;border: 1px solid #3b3b3b;padding: 5px;resize: none;outline: none;}
+.write-subject::placeholder{font-size: 15px;}
+.write-text::placeholder{font-size: 15px;}
+
+/*작성 버튼*/
+.complete-btn{float: right;margin-top: 10px;height: 30px;}
+.complete-btn button{width: 50px;height: 100%;background: #222222;outline: none;color: white;cursor: pointer;}

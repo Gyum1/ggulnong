@@ -1,0 +1,212 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+a, a:link, a:visited{
+    text-decoration: none; /* a태그에 밑줄을 없애줌 */
+    color: black;
+  }
+  ul{
+    list-style: none;
+  }
+html {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+h1{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+body {
+    width: 400px;
+}
+.back{
+    float: right;
+}
+.back img{
+    width: 24px;
+}
+.title{
+    text-shadow: 1px 0 #43a048cb, -1px 0 #43a048cb, 0 -1px #43a048cb, 0 1px #43a048cb;
+    margin-top: 30px;
+    font-size: 32px;
+    color: #43a048cb;
+}
+input{
+    border: 1px solid black;
+    border-radius: 5px;
+    line-height: 35px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.wrapper {
+    padding: 10px;
+}
+
+div {
+    padding-top: 3px;
+    padding-bottom: 8px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+}
+
+.id input {
+    width: 100%;
+}
+
+.name input {
+    width: 100%;
+}
+
+.password input {
+    width: 100%;
+}
+
+.passwordCheck input {
+    width: 100%;
+}
+
+.email input {
+    width: 100%;
+}
+.auth input {
+    width: 60%;
+}
+.auth div {
+    width: 30%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.auth button {
+    width: 35%;
+    height: 40px;
+    font-weight: bold;
+}
+.auth {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .phone {
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+}
+
+#phone1 {
+    text-align: center;
+    font-weight: bold;
+    width: 18%;
+}
+
+#phone2 {
+    font-weight: bold;
+    text-align: center;
+    width: 30%;
+}
+
+#phone3 {
+    font-weight: bold;
+    text-align: center;
+    width: 30%;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.timer div {
+    width: 30%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.timer button {
+    width: 70%;
+    font-weight: bold;
+
+}
+
+.area select {
+    width: 100%;
+    height: 4px;
+}
+/* .field.birth div{ /*field 이면서 birth*/
+    /* display: flex;
+    gap:3px; 간격 벌려줄때 공식처럼 사용한다. 
+}
+.field.birth select{
+    border-radius: 5px;
+    border: 1px solid#000000;
+}  */
+
+.gender {
+    border: 1px solid black;
+    border-radius: 5px;
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: 550;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 3px;
+
+}
+.gender label{
+    padding: 0px 20px 0px 20px;
+}
+.signUp button {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor:pointer;
+}
+
+button{
+    cursor: pointer;
+    height: 30px;
+}
+
+.error{
+    font-size: 1px;
+    height: 20px;
+    color:red;
+    font-weight: 700;
+}
+#footer-div{
+    text-align: center;
+}
+#footer-div ul{
+    margin: 0 auto;
+    padding: 0;
+}
+#footer-div li{
+    display: inline-block;
+    border-right: 1px solid rgb(203, 203, 203);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#footer-div li:last-child {
+    border-right: none
+}
+@media (max-width:768px) {
+    .member{
+        width: 100%;
+    }
+}

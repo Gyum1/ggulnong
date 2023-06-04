@@ -9,25 +9,25 @@
 </head>
 <body>
   <div class="back">
-    <a href="../index.html">
+    <a href="index.jsp">
       <img src="../images/logo.png"><br>
       <h1>꿀 농</h1>
     </a>
   </div>
     <div class="login-page">
       <div class="form">
-        <form class="register-form">
-          <input type="text" placeholder="name"/>
+        <form class="register-form" action="../../loginAction.jsp">
+          <input type="text" placeholder="name" name="userID"/>
           <input type="password" placeholder="password"/>
           <input type="text" placeholder="email address"/>
           <button>create</button>
           <p class="message">Already registered? <a href="#">Sign In</a></p>
         </form>
-        <form class="login-form">
-          <input type="text" placeholder="아이디"/>
-          <input type="password" placeholder="비밀번호"/>
-          <button>로그인</button>
-          <p class="message">회원이 아니신가요? <a href="#">회원가입</a></p>
+        <form class="login-form" action="../../loginAction.jsp">
+          <input type="text" placeholder="아이디" name="userID"/>
+          <input type="password" placeholder="비밀번호" name="userPassword"/>
+          <input type="submit" style="background-color:#4caf50" value="로그인">
+          <p class="message">회원이 아니신가요? <a href="signup.html">회원가입</a></p>
         </form>
       </div>
     </div>

@@ -14,9 +14,9 @@ public class User_DAO {
     public User_DAO() {
         try {
 
-            String dbURL = "jdbc:mysql://127.0.0.1:3306/ggulnong?autoReconnect=true&amp&serverTimezone=UTC";
-            String dbID = "root";
-            String dbPassword = "tkyeom1478@";
+            String dbURL = "jdbc:mysql://43.201.115.70/ggulnong?autoReconnect=true&amp&serverTimezone=UTC";
+            String dbID = "spring";
+            String dbPassword = "daelimspring";
 
             Class.forName("com.mysql.cj.jdbc.Driver");
 

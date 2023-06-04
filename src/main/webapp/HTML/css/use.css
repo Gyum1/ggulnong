@@ -1,0 +1,16 @@
+:root {
+    --div: 20px;
+}/*페딩, 마진 간격 설정*/
+
+/*이용안내 박스*/
+.box-useEx{padding: var(--div);}
+.useEx-wrap{border-width:2px 0px 2px;border-style:solid;border-color:#FBB63E;padding: 15px 0;text-align: center;}
+.useEx{width: 80%;display: inline-block;}
+.useEx h2, h3, p{margin-bottom: 10px;text-align: left;}
+.useEx-title{margin-bottom: 50px;}
+.useEx-title h2{margin-bottom: 15px;}
+.useEx-title h3{border-bottom: 1px dashed #686868;width: 100%;padding-bottom: 5px;}
+.useEX-contsWrap h2{margin-bottom: 20px;}
+.useEX-conts{margin-bottom: 20px;}
+.useEX-conts h3{border-bottom: 1px solid #686868;width: 150px;padding-bottom: 5px;}
+.useEX-conts img{width: 100%;margin-bottom: 5px;}

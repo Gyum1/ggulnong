@@ -31,7 +31,7 @@
     PrintWriter script = response.getWriter();
     script.println("<script>");
     script.println("alert('로그인을 해주세요.')");
-    script.println("location.href = 'login_Practice.jsp'");
+    script.println("location.href = 'HTML(동빈)/html/login.html'");
     script.println("</script>");
   }
 
@@ -61,7 +61,7 @@
       else {
         PrintWriter script = response.getWriter();
         script.println("<script>");
-        script.println("location.href = 'Notice.jsp'");
+        script.println("location.href = 'HTML/noteBoard.jsp'");
         script.println("</script>");
       }
 

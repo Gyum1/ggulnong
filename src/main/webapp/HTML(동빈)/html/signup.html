@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link href="../css/signup.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../images/title-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="back" ><a href="index.jsp"><img src="../images/home.png"></a></div>
+    <div class="wrapper">
+        <div class="title">꿀농</div>
+        <h1>아이디</h1>
+        <div class="id">
+            <input id="id" type="text" placeholder="아이디를 입력해 주세요.">
+            <div id="idError" class="error"></div>
+        </div>
+        <h1>이름</h1>
+        <div class="name">
+            <input id="name"  type="text" placeholder="이름을 입력해 주세요.">
+            <div id="nameError" class="error"></div>
+        </div>
+        <h1>비밀번호</h1>
+        <div class="password">
+            <input id="password" type="password" placeholder="비밀번호를 입력해 주세요.">
+            <div id="passwordError" class="error"></div>
+        </div>
+        <h1>비밀번호 확인</h1>
+        <div class="passwordCheck">
+            <input id="passwordCheck" type="password" placeholder="비밀번호를 다시 입력해 주세요.">
+            <div id="passwordCheckError" class="error"></div>
+        </div>
+        <!-- 3. 필드(생년월일) -->
+        <!-- <div class="field birth">
+            <b>생년월일</b>
+            <div>
+                <input type="number" placeholder="년(4자)">                
+                <select>
+                    <option value="">월</option>
+                    <option value="">1월</option>
+                    <option value="">2월</option>
+                    <option value="">3월</option>
+                    <option value="">4월</option>
+                    <option value="">5월</option>
+                    <option value="">6월</option>
+                    <option value="">7월</option>
+                    <option value="">8월</option>
+                    <option value="">9월</option>
+                    <option value="">10월</option>
+                    <option value="">11월</option>
+                    <option value="">12월</option>
+                </select>
+                <input type="number" placeholder="일">
+            </div>
+            <div id="genderError" class="error"></div>
+        </div> -->
+        <h1>성별</h1>
+        <div class="gender">
+            <label><input id="gender_man" type="radio" name="gender">남성</label>
+            <label><input id="gender_woman" type="radio" name="gender">여성</label>
+        </div>
+        <div id="genderError" class="error"></div>
+
+        <h1>이메일</h1>
+        <div class="email">
+            <input id="email" type="text" placeholder="이메일을 입력해 주세요.">
+            <div id="emailError" class="error"></div>
+        </div>
+        <h1>이메일 인증</h1>
+        <div class="auth">
+            <input id="trust" type="text" placeholder="">
+            <button disabled id="sendMessage" onclick="sendVerificationEmail()">인증번호 받기</button>
+        </div>
+        <div id="trustError" class="error"></div>
+
+
+
+
+        
+        <!-- <div class="phone">
+            <input id="phone1" type="text" size="1" maxlength="3" value="010" readonly> -
+            <input id="phone2" type="text" size="3" maxlength="4" oninput="changePhone2()"> -
+            <input id="phone3" type="text" size="3" maxlength="4" oninput="changePhone3()">
+        </div>
+        <div id="phoneError" class="error"></div>
+        <div class="auth">
+            <div id="certificationNumber">-</div>
+            <button disabled id="sendMessage" onclick="getToken()">인증번호 받기</button>
+        </div>
+
+        <div class="timer">
+            <div id="timeLimit">03:00</div>
+            <button disabled id="completion" onclick="checkCompletion()">인증확인</button>
+        </div> -->
+        
+        <div class="line">
+            <hr>
+        </div>
+        <div class="signUp">
+            <button id="signUpButton" disabled onclick="signUpCheck()">가입하기</button>
+        </div>
+        <div id="footer-div">
+            <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+            </ul>
+            </div>
+    </div>
+    <script type="text/javascript" src="../js/signup.js"></script>
+</body>
+
+</html>
