@@ -1,0 +1,58 @@
+:root {
+    --div: 20px;
+}/*페딩, 마진 간격 설정*/
+
+a{color: #fff; text-decoration: none; outline: none}
+
+/*사이드 메뉴*/
+.side{width: 100%}
+.side-menu{padding:25px 0 16px 0;list-style: none;}
+.side-menu li{margin-bottom:10px;border: 1px solid #8b8b8b;border-radius: 5px;}
+.side-menu li a{display:block;padding: 10px 5px 10px 24px;line-height:21px;font-size:17px;font-weight:bold;color:#222222;
+text-decoration: none; outline: none}
+.side-menu li.on a{background-color:#FBB63E;color:#fff;border-radius: 4px;}
+.side-menu li a:hover,
+.side-menu li a:focus{background-color:#FBB63E;color:#fff;border-radius: 4px;}
+.box-sidebar h2{margin: 25px;}
+
+/*메인제목*/
+.main-tit{padding: var(--div);padding-left: 40px;}
+.main-tit h3{font-size: 40px;text-align: center;}
+
+/*페이징*/
+.paging{text-align: center;}
+.paging a{display: inline-block ;font-size: 15px;color: #222222;min-width: 35px;min-height: 35px;}
+.paging .on a{color: #FBB63E;font-weight: 900;}
+.paging a:hover,
+.paging a:focus{color: #FBB63E;font-weight: 900;}
+
+/*검색*/
+.search {
+    height: 30px;
+    width: 300px;
+    border: 1px solid #8b8b8b;
+    background: white;
+    float: right;
+    margin: var(--div);
+}
+  
+.search input {
+    height: 10px;
+    width: 200px;
+    border: 0px;
+    outline: none;
+    padding: 13px;
+    font-size: 14px;
+    float: left;
+
+}
+.search button{
+    width: 50px;
+    height: 100%;
+    border: 0px;
+    background: #222222;
+    outline: none;
+    float: right;
+    color: white;
+    cursor: pointer;
+}

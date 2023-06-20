@@ -1,0 +1,42 @@
+/*기본 틀*/
+:root {
+    --gap: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+}
+
+.container {
+    width: 75%;
+    min-width: 1024px;
+    margin: 0px auto;
+    clear: both;
+}
+
+.box {
+    padding: var(--gap);
+    display: flex;
+    gap: var(--gap);
+    min-height: 300px;
+    flex-direction: row;
+}
+
+.box-sidebar {
+    width: 210px;
+    flex-shrink: 0;
+}
+
+.box-contents {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.footer{
+    width: 100%;
+}
