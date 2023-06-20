@@ -1,0 +1,208 @@
+@media screen and (max-width:1000px){
+    .container{
+        max-width: 999px;
+        min-width: 851px;
+        margin: 0 auto;
+    }
+    header{
+        max-width: 999px;
+    }   
+    .login-bar{
+      max-width: 980px;
+      min-width: 851px;
+      height: 20px;
+      font-size: 12px;
+  }
+    .logo{
+      padding: 0px;
+      padding-top: 10px;
+      max-width: 100px;
+    }
+    .logo img{
+      max-width: 50px;
+    }
+    .logo h1{
+      max-width: 50px;
+      padding-left: 0px;
+      font-size: 18px;
+      text-align: center;
+    }
+  
+  
+  
+    nav {
+        width: 650px;
+        height: 100%;
+    }
+    
+    nav .nav-fir{
+      padding: 0;
+      padding-top: 5px;
+    }
+    #menuicon + label {
+      margin-top: 23px;
+    }
+    .sidebar-ul > li {
+        width: 14%;
+    }
+    .sidebar-ul > li:first-child {
+        margin-left:20%;
+    }
+    .sidebar-ul > li > a ,.sidebar-li > li > a{
+        font-size:14px;
+    }
+    .sidebar-li .desc > a{
+        font-size:12px;
+    }
+    .nav-menu > li{
+        width: 125px;
+    }
+    .nav-menu > li > a {
+        display: block;
+        color: black;
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+    .nav-menu > li:hover > ul {
+        width: 125px;
+    } 
+    .nav-menu > li > ul > li > a {
+        font-size: 13px;
+    }
+    
+    .section {
+        min-width: 851px;
+    }
+    .section .slidewrap {
+        max-width:999px;
+    }
+    .contents{
+        min-width: 851px;
+        max-width: 999px;
+    }
+    .contents .btn-open{
+      max-width: 130px;
+      min-width: 150px;
+      margin-right: 10px;
+  }
+  .modal{
+    max-width: 350px;
+    height: 550px;
+    }
+    .modal p{
+      font-size: 12px;
+    }
+    .modal img{
+    max-width: 70%;
+    }
+    footer{   
+        padding: 0;
+        width:800px; 
+        padding-left: 350px;
+    }
+    #footer-div ul li a {  
+      font-size:12px; 
+  }
+  #footer-div ul li{
+    padding: 1px 10px;
+  }
+    #company{
+      margin-top:10px;
+    }
+    #company p{
+      font-size: 12px;
+    }
+  }
+
+
+
+
+
+  .tabMenu{ /*          컨텐츠 - 탭메뉴            */
+    /*부모가 컨텐츠*/
+    margin-left: 0px;
+    text-align: center;
+    width: 50%;
+    height: 310px;
+    margin-top: 25px;
+    float: left;
+  }
+
+  #notice ul li{
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 2.5;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tabMenu span{
+  
+    font-weight: 100;
+    font-size: 13px;
+    padding-right: 15px;
+  }
+
+  .btn-close {
+    padding: 8px 140px;
+    margin: 25px 0 35px 0;
+    background-color: #678168;
+    border-radius: 10px;
+    border: none;
+    color: white;
+  }
+
+  .modal {
+    position: absolute;
+    top: 20%;
+    width: 440px;
+    background-color: #bbdcbd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .modal h3 {
+    margin: 40px 0 7px 0;
+    font-size: 25px;
+    color: #678168;
+    font-family: "GmarketBold";
+  }
+  .modal h4 {
+    font-size: 20px;
+  }
+  .modal img {
+    width: 350px;
+    margin: 30px auto;
+    border-radius: 15px;
+  }
+  .modal p {
+    margin: 0 auto;
+    width: 360px;
+    font-weight: 1000;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+
+
+
+  .modal{
+    top: 13%;
+    max-width: 400px;
+    height: 530px;
+  }
+  .modal img{
+    max-width: 75%;
+    margin: 10px 0 10px 0;
+  }
+  .modal h3 {
+    margin: 20px 0 7px 0;
+    font-size: 16px;
+    color: #678168;
+    font-family: "GmarketBold";
+  }
+  .modal h4 {
+    font-size: 14px;
+  }
+  .modal p {
+    font-size: 13px;
+  }

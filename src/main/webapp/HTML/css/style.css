@@ -23,13 +23,6 @@ ul{
   width: 1920px;
   margin: 0 auto;
 }
-/*---------------------헤더----------------------*/
-header{
-  width: 1820px;
-  height:80px;
-  margin: 0 auto;
-  z-index: 1;
-}   
 .logres-box{
   max-width: 1720px;
   margin: 0 auto;
@@ -38,6 +31,31 @@ header{
 .login-bar{
   text-align: right;
   font-size:17px; 
+}
+/*                     헤더                             */
+header{
+  width: 1820px;
+  height:80px;
+  margin: 0 auto;
+  z-index: 1;
+}   
+.logo{ /*         헤더 - 로고            */
+  width: 150px;
+  height: 60px;
+  float: left;
+}
+.logo img{
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+.logo h1{ /*.logo > a > h1 이렇게도 가능*/
+    float: right;
+    padding-right: 40px;
+    padding-top: 15px;
+    font-family:'Noto Sans KR'!important;
+    font-weight: 1600;
+    font-size: 24px;
 }
 .rightHeader{
   float: right;
@@ -82,26 +100,8 @@ header{
 .rightHeader button:active{
   color:red;
 }
-/*---------------------로고----------------------*/
-.logo{
-  width: 150px;
-  height: 60px;
-  float: left;
-}
-.logo img{
-  width: 60px;
-  height: 60px;
-  float: left;
-}
-.logo h1{ /*.logo > a > h1 이렇게도 가능*/
-    float: right;
-    padding-right: 40px;
-    padding-top: 15px;
-    font-family:'Noto Sans KR'!important;
-    font-weight: 1600;
-    font-size: 24px;
-}
-/*---------------------네비 시작----------------------*/
+
+
 nav{
   width:1420px;
   height: 80px;
@@ -111,6 +111,7 @@ nav{
   font-family: 'Noto Sans KR', sans-serif;
 }
 /* 삼단버튼 */
+/* 메뉴바 펼치기! 찾아 배운거! */
 nav .nav-fir{
   margin-left: 200px;
   float: left;
@@ -118,8 +119,6 @@ nav .nav-fir{
 #menuicon {
   display:none;
 }
-/*---------------------라벨----------------------*/
-/*라벨은 작대기 세개 있는 메뉴 펼치는 바*/
 label{
   margin-top: 35px;
 }
@@ -162,10 +161,7 @@ label{
 #menuicon:checked + label span:nth-child(3) {
   bottom:50%;transform:translateY(50%) rotate(-45deg);
 }
-/*삼단 메뉴 클릭시 슬라이드 부분*/
-#menuicon:checked + label + .sidebar {
-  height: 300px;
-}
+
 .sidebar {
   margin-top: 25px;
   width:100%;
@@ -191,6 +187,10 @@ label{
   right: 0px;
   bottom: 0px;
 }
+#menuicon:checked + label + .sidebar {
+  height: 300px;
+}
+
 .sidebar-ul {
   display: flex;
   justify-content: center;  
@@ -199,6 +199,7 @@ label{
   text-align:center;
   margin: 0 auto;
 }
+
 .sidebar-ul > li {
   width: 15%;
   margin-top:16px;
@@ -233,12 +234,14 @@ label{
   font-size:15px;
   font-weight: normal;
 }
-/*-------------------삼단 바 오른쪽 부분----------------------*/
+
+/* nav left */
 .nav-left{
   padding-top: 30px;
   height: 64px;
   text-align: center;
 }
+
 .nav-menu > li{
   width: 200px;
   float: left;
@@ -267,6 +270,7 @@ label{
   height: 0;
   transition: all 0.4s;
 }
+
 .nav-menu > li > ul > li {
   /*위 아래 오른쪽 왼쪽*/
   padding: 35px 15px 10px 3px;
@@ -298,8 +302,7 @@ label{
   opacity: 0.9;
   color: #000;
 }  
-/*-------------------네비 끝----------------------*/
-/*-------------------이미지 슬라이드 부분----------------------*/
+/* 네비 END --------------------------------------------------------------*/
 .section{
     width: 1920px;
     border-top: 4px solid rgb(130, 223, 76);
@@ -316,14 +319,19 @@ label{
   width: 100%;
   height: 400px;
 }
-/*-------------------컨텐츠----------------------*/
-.contents{
+
+
+/* 이미지 슬라이드쇼 END --------------------------------------
+/*                     헤더                             */
+/* contents -------------------------------------------------------------------------------------------*/
+.contents{ /*          컨텐츠            */
   width: 1920px;
   height: 400px;
   margin: 0 auto;
+  
 }
-/*-------------------게시판----------------------*/
-.tabMenu{
+.tabMenu{ /*          컨텐츠 - 탭메뉴            */
+  /*부모가 컨텐츠*/
   text-align: center;
   width: 700px;
   height: 400px;
@@ -386,7 +394,6 @@ label{
 .btn-about button img {
   width: 50px;
 }
-/*-------------------이달의 식물 클릭시 나오는거----------------------*/
     .modal-background {
       display: none;
       justify-content: center;
@@ -446,7 +453,25 @@ label{
       transition: 0.3s ease-out;
       cursor: pointer;
     }
-/*-------------------푸터----------------------*/
+    
+    /* .btn-moveTop {
+      position: fixed;
+      right: 60px;
+      bottom: 60px;
+      width: 65px;
+      height: 65px;
+      background-image: url(../images/btn-moveTop.png);
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-moveTop:hover {
+      background-image: url(../images/btn-moveTop-hover.png);
+      transition: 0.5s ease-out;
+    } */
+
+
+/*     푸터 시작     */
 footer{   
     width:1920px;
     text-align: center; 
@@ -485,7 +510,6 @@ footer{
   font-size:14px;  /* 글자 크기 */
   color:#aaa; 
 }
-/*-------------------반응형----------------------*/
 @media screen and (max-width:1536px){
   .container{
     max-width: 1536px;

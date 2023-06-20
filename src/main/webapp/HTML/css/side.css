@@ -36,17 +36,17 @@ text-decoration: none; outline: none}
     margin: var(--div);
 }
   
-input {
+.search input {
     height: 10px;
     width: 200px;
     border: 0px;
     outline: none;
-    padding: 10px;
+    padding: 13px;
     font-size: 14px;
     float: left;
 
 }
-button{
+.search button{
     width: 50px;
     height: 100%;
     border: 0px;

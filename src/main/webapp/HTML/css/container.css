@@ -10,19 +10,20 @@
 
 .header{
     width: 100%;
-    background-color: aqua;
 }
 
 .container {
     width: 75%;
+    min-width: 1024px;
     margin: 0px auto;
+    clear: both;
 }
 
 .box {
     padding: var(--gap);
     display: flex;
     gap: var(--gap);
-    min-height: 400px;
+    min-height: 300px;
     flex-direction: row;
 }
 
@@ -38,5 +39,4 @@
 
 .footer{
     width: 100%;
-    background-color: aqua;
 }

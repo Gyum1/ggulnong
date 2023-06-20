@@ -102,7 +102,7 @@
       </tr>
       </tbody>
     </table>
-    <a href="Notice.jsp" class="btn btn-outline-primary" style="margin: 5px">목록</a>
+    <a href="../../HTML/noteBoard.jsp" class="btn btn-outline-primary" style="margin: 5px">목록</a>
     <%
       if(userID != null && userID.equals(bbs.getUserID())){
     %>
