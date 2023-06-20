@@ -4,90 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89a525dc-e241-4ab9-ab4f-2ae6d9bc104b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Crop/crop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Crop/crop_DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/css/board1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/css/container.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/css/side.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/css/signup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/html/alamBoard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/html/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/html/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/images/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/CropView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/css/dddd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/css/privacy.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/css/use.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/css/write.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/html/alamBoard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/html/alamText1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/html/alamText2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/html/alamWrite.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/html/farmEquip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/html/farmMachine.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/html/noteBoard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/html/noteText1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/html/noteText2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/html/noteWrite.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/html/privacyBoard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/html/useExBoard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/been.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/character.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/enfj.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/hobby.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/loginPage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/mainPage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/noteBoardPage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/slide1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/slide2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/slide3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/tennis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/images/title-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/js/secon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/noteBoard.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/noteView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/HTML/noteWrite.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Notice/bbs_DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notice/bbs_DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User/User_DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User/User_DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/html/1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/html/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML(동빈)/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML/alamBoard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML/alamText1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML/alamText2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML/css/board.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/HTML/css/board.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML/css/container.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/HTML/css/container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML/css/contentsText.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/HTML/css/contentsText.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML/css/side.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/HTML/css/side.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML/farmEquip.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML/farmMachine.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML/noteBoard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML/noteText1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML/noteText2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HTML/write.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/HTML/html/write.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Notice_View.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Notice_View.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Notice_Write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Notice_Write.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Notice_Write_Action.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Notice_Write_Action.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/loginAction.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/loginAction.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/logoutAction.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/logoutAction.jsp" afterDir="false" />
+    <list default="true" id="89a525dc-e241-4ab9-ab4f-2ae6d9bc104b" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-06-04__8_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-06-04__8_40__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,5 +59,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
