@@ -85,6 +85,7 @@
                 </label>
                 <div class="sidebar">
                     <ul class="sidebar-ul">
+<<<<<<< HEAD
                         <li><a href="alamBoard.jsp">알림/소식</a>
                             <ul class="sidebar-li">
                                 <li><a href="alamBoard.jsp">공지사항</a></li>
@@ -94,6 +95,18 @@
                         <li><a href="machineRental.jsp">농기구</a>
                             <ul class="sidebar-li">
                                 <li><a href="machineRental.jsp">기구 대여</a></li>
+=======
+                        <li><a href="#">알림/소식</a>
+                            <ul class="sidebar-li">
+                                <li><a href="html/content.html">공지사항</a></li>
+                                <li><a href="#2">뉴스소식</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#2">농기구</a>
+                            <ul class="sidebar-li">
+                                <li><a href="#">기구 대여</a></li>
+                                <li class="desc"><a href="#1">-사용법</a></li>
+>>>>>>> origin/master
                             </ul>
                         </li>
                         <li><a href="Crop.jsp">작물·재배법</a>
@@ -105,10 +118,19 @@
                                 <li class="desc"><a href="#1">-화분 관련</a></li>
                             </ul>
                         </li>
+<<<<<<< HEAD
                         <li><a href="html/useExBoard.html">이용안내</a>
                             <ul class="sidebar-li">
                                 <li><a href="html/privacyBoard.html">개인정보처리방침</a></li>
                                 <li><a href="html/useExBoard.html">사이트 이용안내</a></li>
+=======
+                        <li><a href="#6">이용안내</a>
+                            <ul class="sidebar-li">
+                                <li><a href="#1">개인정보처리방침</a></li>
+                                <li><a href="#">사이트 이용안내</a></li>
+                                <li class="desc"><a href="#1">-신고방법</a></li>
+                                <li class="desc"><a href="#1">-후원방법</a></li>
+>>>>>>> origin/master
                             </ul>
                         </li>
                     </ul>
@@ -119,6 +141,7 @@
 
         <div class="nav-left">
             <ul class="nav-menu">
+<<<<<<< HEAD
                 <li><a href="alamBoard.jsp">알림/소식</a>
                     <ul class="submenu">
                         <li><a href="alamBoard.jsp">공지사항</a></li>
@@ -128,6 +151,18 @@
                 <li><a href="machineRental.jsp">농기구</a>
                     <ul class="submenu">
                         <li><a href="machineRental.jsp">기구 대여</a></li>
+=======
+                <li><a href="#">알림/소식</a>
+                    <ul class="submenu">
+                        <li><a href="html/content.html">공지사항</a></li>
+                        <li><a href="#2">뉴스소식</a></li>
+                    </ul>
+                </li>
+                <li><a href="#2">농기구</a>
+                    <ul class="submenu">
+                        <li><a href="#">기구 대여</a></li>
+                        <li><a href="#1">사용법</a></li>
+>>>>>>> origin/master
                     </ul>
                 </li>
                 <li><a href="Crop.jsp">작물·재배법</a>
@@ -136,10 +171,17 @@
                         <li><a href="#2">밭 관리법</a></li>
                     </ul>
                 </li>
+<<<<<<< HEAD
                 <li><a href="html/useExBoard.html">이용안내</a>
                     <ul class="submenu">
                         <li><a href="html/privacyBoard.html">개인정보처리방침</a></li>
                         <li><a href="html/useExBoard.html">사이트 이용안내</a></li>
+=======
+                <li><a href="#6">이용안내</a>
+                    <ul class="submenu">
+                        <li><a href="#1">개인정보처리방침</a></li>
+                        <li><a href="#">사이트 이용안내</a></li>
+>>>>>>> origin/master
                     </ul>
                 </li>
             </ul>
@@ -212,10 +254,26 @@
 
             <div class="paging">
                 <span class="on">
+<<<<<<< HEAD
                     <a href="alamBoard.jsp?pageNumber=1" title="현재">1</a>
                 </span>
                 <span>
                     <a href="alamBoard.jsp?pageNumber=2">2</a>
+=======
+                    <a href="#" title="현재">1</a>
+                </span>
+                <span>
+                    <a href="#">2</a>
+                </span>
+                <span>
+                    <a href="#">3</a>
+                </span>
+                <span>
+                    <a href="#">4</a>
+                </span>
+                <span>
+                    <a href="#">5</a>
+>>>>>>> origin/master
                 </span>
                 <a href="#1" class="next" title="다음"></a>
                 <a href="#1" class="last" title="마지막">>></a>
